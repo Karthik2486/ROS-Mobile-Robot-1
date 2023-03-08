@@ -16,34 +16,29 @@ teleop_twist_keyboard package
 git clone https://github.com/Karthik2486/ROS-Mobile-Robot-1.git
 ```
 
-2. Navigate to the four-wheeled-mobile-robot directory:
-```bash
-cd kb_mobile_robot1_ws
-```
-
-3. Build the package using catkin_make:
+2. Build the package using catkin_make:
 ```bash:
 catkin_make
 ```
 
-4. Source the ROS environment:
+3. Source the ROS environment:
 ```shell
 $ source devel/setup.bash
 ```
 
-5. Launch the simulation:
+4. Launch the simulation:
 ```shell
 $ roslaunch kb_car2_description gazebo.launch
 ```
 This will launch Gazebo with the mobile robot in an H model environment.
 
-6. Launch the teleop_twist_keyboard node:
+5. Launch the teleop_twist_keyboard node:
 ```shell
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 This will launch the keyboard teleoperation node that allows you to control the movement of the robot.
 
-7. Map the enviiornment using gmapping:
+6. Map the enviiornment using gmapping:
 ```shell
 $ rosrun gmapping slam_gmapping scan:=(scan_topic)
 ```
