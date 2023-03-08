@@ -32,20 +32,21 @@ $ source devel/setup.bash
 ```
 
 5. Launch the simulation:
-```ruby
+```shell
 $ roslaunch kb_car2_description gazebo.launch
 ```
 This will launch Gazebo with the mobile robot in an H model environment.
 
-6, Launch the teleop_twist_keyboard node:
-```ruby
+6. Launch the teleop_twist_keyboard node:
+```shell
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 This will launch the keyboard teleoperation node that allows you to control the movement of the robot.
 
 7. Map the enviiornment using gmapping:
-```ruby
+```shell
 $ rosrun gmapping slam_gmapping scan:=(scan_topic)
+```
 
 ### Contributing
 If you would like to contribute to this project, please fork the repository and submit pull requests. We welcome any contributions that can improve the simulation and its functionalities.
