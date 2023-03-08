@@ -18,7 +18,7 @@ git clone https://github.com/Karthik2486/ROS-Mobile-Robot-1.git
 
 2. Navigate to the four-wheeled-mobile-robot directory:
 ```bash
-cd Dani-car-demo
+cd kb_mobile_robot1_ws
 ```
 
 3. Build the package using catkin_make:
