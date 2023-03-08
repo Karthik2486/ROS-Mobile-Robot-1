@@ -1,0 +1,2 @@
+kb_car2_description
+-DCATKIN_DEVEL_PREFIX=/home/karthik/kb_mobile_robot1_ws/devel -DCMAKE_INSTALL_PREFIX=/home/karthik/kb_mobile_robot1_ws/install -G Unix Makefiles
