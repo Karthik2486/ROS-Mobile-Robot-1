@@ -2,4 +2,4 @@
 source_root_dir = '/home/karthik/kb_mobile_robot1_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/karthik/learn_ros_ws/devel;/opt/ros/noetic'.split(';') if '/home/karthik/learn_ros_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/karthik/manipulator_ws/devel;/home/karthik/learn_ros_ws/devel;/opt/ros/noetic'.split(';') if '/home/karthik/manipulator_ws/devel;/home/karthik/learn_ros_ws/devel;/opt/ros/noetic' != '' else []

@@ -131,7 +131,18 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/karthik/kb_mobile_robot1_ws/build/gtest/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_bringup/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_gazebo/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_mbf/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_robot/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_slam/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/kb_car2_navigation/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_msgs/cmake_install.cmake")
   include("/home/karthik/kb_mobile_robot1_ws/build/kb_car2_description/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_description/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_navigation/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_base/cmake_install.cmake")
+  include("/home/karthik/kb_mobile_robot1_ws/build/diffbot-noetic-devel/diffbot_control/cmake_install.cmake")
 
 endif()
 

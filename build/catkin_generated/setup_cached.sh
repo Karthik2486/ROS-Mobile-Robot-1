@@ -9,6 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/karthik/kb_mobile_robot1_ws/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/karthik/kb_mobile_robot1_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/karthik/kb_mobile_robot1_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/karthik/kb_mobile_robot1_ws/build'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/karthik/kb_mobile_robot1_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/karthik/kb_mobile_robot1_ws/src:$ROS_PACKAGE_PATH"

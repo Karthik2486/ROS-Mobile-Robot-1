@@ -1,2 +1,2 @@
-kb_car2_description
+diffbot-noetic-devel/diffbot_base:diffbot-noetic-devel/diffbot_bringup:diffbot-noetic-devel/diffbot_control:diffbot-noetic-devel/diffbot_description:diffbot-noetic-devel/diffbot_gazebo:diffbot-noetic-devel/diffbot_mbf:diffbot-noetic-devel/diffbot_msgs:diffbot-noetic-devel/diffbot_navigation:diffbot-noetic-devel/diffbot_robot:diffbot-noetic-devel/diffbot_slam:kb_car2_description:kb_car2_navigation
 -DCATKIN_DEVEL_PREFIX=/home/karthik/kb_mobile_robot1_ws/devel -DCMAKE_INSTALL_PREFIX=/home/karthik/kb_mobile_robot1_ws/install -G Unix Makefiles

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+
+<launch>
+  <!-- Arguments -->
+  
+  <arg name="cmd_vel_topic" default="/cmd_vel" />
+  <arg name="odom_topic" default="odom" />
+  <arg name="move_forward_only" default="true"/>
+
+ <!-- Map server -->
+  <node pkg="map_server" name="map_server" type="map_server" args="/home/kb_mobile_robot1_ws/src/kb_car2_navigation/maps/my_car_map.yaml"/>
+
+
+  <include file="$(find kb_car2_navigation)/launch/amcl.launch"/>
+  <!-- move_base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+   
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    <rosparam file="$(find kb_car2_navigation)/param/common_costmap.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find kb_car2_navigation)/param/common_costmap.yaml" command="load" ns="local_costmap"/>
+    <!-- global costmap params -->
+    <rosparam file="$(find kb_car2_navigation)/param/local_costmap.yaml" command="load" />
+    <rosparam file="$(find kb_car2_navigation)/param/global_costmap.yaml" command="load" />
+    <!-- local costmap params -->
+    <rosparam file="$(find kb_car2_navigation)/param/move_base.yaml" command="load" />
+    <rosparam file="$(find kb_car2_navigation)/param/dwa_planner.yaml" command="load" />
+    <!-- remappings -->
+    <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+    <remap from="odom" to="$(arg odom_topic)"/>
+    <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
+  </node>
+  
+  
+   <!-- rviz -->
+
+  <node pkg="rviz" 
+          type="rviz" 
+          name="rviz" 
+          args="-d $(find kb_car2_navigation)/launch/navigation.rviz"
+          required="true"
+          />
+</launch>

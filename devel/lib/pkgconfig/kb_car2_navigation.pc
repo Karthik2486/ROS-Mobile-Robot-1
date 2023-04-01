@@ -1,0 +1,8 @@
+prefix=/home/karthik/kb_mobile_robot1_ws/devel
+
+Name: kb_car2_navigation
+Description: Description of kb_car2_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
